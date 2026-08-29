@@ -115,11 +115,6 @@ Users can view:
 - My Donations
 - My Requests
 
-### 🌙 Dark Mode
-- Light mode
-- Dark mode
-- Theme preference stored using LocalStorage
-
 ### 📱 Responsive Design
 The website is designed to work on:
 
