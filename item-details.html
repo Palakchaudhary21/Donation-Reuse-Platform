@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Item Details | ReWear</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="details-header">
+
+    <a href="index.html" class="back-btn">
+
+        <i class="fa-solid fa-arrow-left"></i>
+
+        Back
+
+    </a>
+
+</header>
+
+
+<section class="item-details">
+
+    <div class="details-image">
+
+        <img
+        id="detailImage"
+        src=""
+        alt="Donation Item">
+
+    </div>
+
+
+    <div class="details-content">
+
+        <span id="detailCategory" class="detail-badge">
+
+            Clothes
+
+        </span>
+
+        <h1 id="detailName">
+
+            Winter Jacket
+
+        </h1>
+
+
+        <div class="detail-info">
+
+            <p>
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <span id="detailLocation">
+
+                    Pune
+
+                </span>
+
+            </p>
+
+            <p>
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                <span id="detailCondition">
+
+                    Excellent Condition
+
+                </span>
+
+            </p>
+
+        </div>
+
+
+        <h3>Description</h3>
+
+        <p id="detailDescription">
+
+            Warm winter jacket in excellent condition.
+            Clean and ready to use.
+
+        </p>
+
+
+        <div class="donor-box">
+
+    <h3>Donor Information</h3>
+
+    <p>
+        <strong>Name :</strong>
+        <span id="detailDonor">ReWear Community</span>
+    </p>
+
+    <p>
+        <strong>Posted :</strong>
+        <span id="detailPosted">2 Days Ago</span>
+    </p>
+
+</div>
+
+        <div class="detail-buttons">
+
+            <button class="request-btn"
+                    id="openRequest">
+
+                Request Item
+
+            </button>
+
+            <a href="requests.html" class="view-btn">
+
+                View Request History
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= REQUEST MODAL ================= -->
+
+<div class="request-modal" id="requestModal">
+
+    <div class="modal-content">
+
+        <span class="close-modal">&times;</span>
+
+        <h2>Request This Item</h2>
+
+        <form id="requestForm">
+
+            <input
+                type="text"
+                id="userName"
+                placeholder="Full Name"
+                required>
+
+            <input
+                type="email"
+                id="userEmail"
+                placeholder="Email Address"
+                required>
+
+            <input
+                type="tel"
+                id="userPhone"
+                placeholder="Phone Number"
+                required>
+
+            <textarea
+                id="userMessage"
+                rows="4"
+                placeholder="Why do you need this item?"
+                required></textarea>
+
+            <button type="submit" class="submit-request">
+
+                Submit Request
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<script src="js/details.js"></script>
+
+</body>
+</html>

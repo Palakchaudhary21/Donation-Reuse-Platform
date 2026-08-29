@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive Website -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ReWear | Donation & Reuse Platform</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR START ================= -->
+
+<header>
+    <nav class="navbar">
+
+        <!-- LOGO -->
+        <div class="logo">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+            <span>ReWear</span>
+        </div>
+
+
+        <!-- ================= PRIMARY NAVIGATION ================= -->
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#featured">Browse</a>
+            </li>
+            <li>
+                <a href="#how-it-works">About</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+
+
+        <!-- ================= USER SECTION ================= -->
+
+        <div class="nav-user-section">
+
+            <!-- Welcome -->
+            <span id="welcomeUser"></span>
+
+
+            <!-- User Links -->
+            <div class="user-links">
+
+                <a href="my-donations.html" class="user-nav-link">
+                    My Donations
+                </a>
+
+                <a href="my-requests.html" class="user-nav-link">
+                    My Requests
+                </a>
+
+                <a href="profile.html" class="user-nav-link">
+                    <i class="fa-solid fa-user"></i>
+                    Profile
+                </a>
+
+                <a href="favorites.html" class="favorite-icon" aria-label="Favorites">
+                    <i class="fa-solid fa-heart"></i>
+                </a>
+
+
+                <!-- Notification -->
+                <a href="notifications.html"
+                   class="notification-nav">
+
+                    <div class="notification-icon">
+
+                        <i class="fa-solid fa-bell"></i>
+
+                        <span id="notificationCount">
+                            0
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- Login -->
+            <a href="login.html"
+               class="login-btn"
+               id="loginBtn">
+
+                Login
+
+            </a>
+
+
+            <!-- Logout -->
+            <button id="logoutBtn"
+                    class="logout-btn">
+
+                Logout
+
+            </button>
+
+        </div>
+
+
+        <!-- ================= MOBILE MENU BUTTON ================= -->
+
+        <button class="menu-btn"
+                id="menuBtn"
+                aria-label="Open Menu">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+
+        <!-- ================= MOBILE MENU ================= -->
+
+        <div class="mobile-menu" id="mobileMenu">
+
+            <a href="#">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </a>
+
+            <a href="#featured">
+                <i class="fa-solid fa-box-open"></i>
+                Browse
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-circle-info"></i>
+                About
+            </a>
+
+            <a href="#contact">
+                <i class="fa-solid fa-envelope"></i>
+                Contact
+            </a>
+
+            <hr>
+
+
+            <a href="my-donations.html">
+                <i class="fa-solid fa-box"></i>
+                My Donations
+            </a>
+
+            <a href="my-requests.html">
+                <i class="fa-solid fa-file-lines"></i>
+                My Requests
+            </a>
+
+            <a href="profile.html">
+                <i class="fa-solid fa-user"></i>
+                Profile
+            </a>
+
+            <a href="favorites.html">
+                <i class="fa-solid fa-heart"></i>
+                Favorites
+            </a>
+
+
+            <!-- Mobile Notifications -->
+            <a href="notifications.html"
+               class="mobile-notification-link">
+
+                <span>
+                    <i class="fa-solid fa-bell"></i>
+                    Notifications
+                </span>
+
+                <span id="mobileNotificationCount"
+                      class="mobile-notification-count">
+
+                    0
+
+                </span>
+
+            </a>
+
+
+            <hr>
+
+
+            <!-- Mobile Login -->
+            <a href="login.html"
+               id="mobileLoginBtn">
+
+                <i class="fa-solid fa-right-to-bracket"></i>
+                Login
+
+            </a>
+
+
+            <!-- Mobile Logout -->
+            <button id="mobileLogoutBtn"
+                    class="mobile-logout-btn">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+
+            </button>
+
+        </div>
+
+    </nav>
+</header>
+
+<!-- ================= NAVBAR END ================= -->
+
+    <!-- ================= HERO START ================= -->
+
+    <section class="hero" data-aos="fade-up">
+        <!-- Floating Background Shapes -->
+
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+
+        <div class="hero-content">
+
+            <h1>
+                Give Your Unused Items a
+                <span>Second Life.</span>
+            </h1>
+
+            <p>
+
+                Donate clothes and household items to people who truly need
+                them. Together we can reduce waste and build a more caring
+                community.
+
+            </p>
+
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+
+                <a href="donate.html" class="primary-btn">
+                    Donate Item
+                </a>
+                
+                <a href="#featured" class="secondary-btn">
+                    Browse Items
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image" data-aos="zoom-in" data-aos-delay="200">
+
+            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=900"
+                alt="Donation">
+
+        </div>
+        
+    </section>
+
+     <!-- ================= CATEGORIES ================= -->
+
+   <section class="categories" data-aos="fade-up">
+        <h2>Browse Categories</h2>
+
+        <div class="category-card">
+
+            <div class="card" data-aos="zoom-in" data-aos-delay="100">
+
+                <i class="fa-solid fa-shirt"></i>
+
+                <h3>Clothes</h3>
+
+            </div>
+
+            <div class="card" data-aos="zoom-in" data-aos-delay="200">
+
+                <i class="fa-solid fa-book"></i>
+
+                <h3>Books</h3>
+
+            </div>
+
+            <div class="card" data-aos="zoom-in" data-aos-delay="300">
+
+                <i class="fa-solid fa-couch"></i>
+
+                <h3>Furniture</h3>
+
+            </div>
+
+            <div class="card" data-aos="zoom-in" data-aos-delay="400">
+
+                <i class="fa-solid fa-kitchen-set"></i>
+                <h3>Kitchen</h3>
+
+            </div>
+
+            <div class="card" data-aos="zoom-in" data-aos-delay="500">
+
+
+                <i class="fa-solid fa-tv"></i>
+
+                <h3>Electronics</h3>
+
+            </div>
+
+            <div class="card" data-aos="zoom-in" data-aos-delay="600">
+
+                <i class="fa-solid fa-puzzle-piece"></i>
+
+                <h3>Toys</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ================= SEARCH START ================= -->
+
+    <section class="search-section" data-aos="zoom-in">
+
+        <h2>Find Items Near You</h2>
+
+    </section>
+
+    <!-- ================= CATEGORY FILTER ================= -->
+
+<section class="filter-section">
+
+    <div class="filter-buttons">
+
+        <button class="filter-btn active" data-filter="all">
+            All
+        </button>
+
+        <button class="filter-btn" data-filter="Clothes">
+            Clothes
+        </button>
+
+        <button class="filter-btn" data-filter="Books">
+            Books
+        </button>
+
+        <button class="filter-btn" data-filter="Furniture">
+            Furniture
+        </button>
+
+        <button class="filter-btn" data-filter="Kitchen">
+            Kitchen
+        </button>
+
+        <button class="filter-btn" data-filter="Electronics">
+            Electronics
+        </button>
+
+        <button class="filter-btn" data-filter="Toys">
+            Toys
+        </button>
+
+    </div>
+
+</section>
+
+    <!-- ================= LOCATION FILTER ================= -->
+
+            <section class="location-filter">
+
+                <select id="locationFilter">
+
+                    <option value="all">All Locations</option>
+
+                    <option value="Pune">Pune</option>
+
+                    <option value="Delhi">Delhi</option>
+
+                    <option value="Jaipur">Jaipur</option>
+
+                    <option value="Mumbai">Mumbai</option>
+
+                    <option value="Indore">Indore</option>
+
+                    <option value="Ujjain">Ujjain</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Lucknow">Lucknow</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Nagpur">Nagpur</option>
+                    <option value="Surat">Surat</option>
+                    <option value="Jodhpur">Jodhpur</option>
+
+                    <!-- Maharashtra -->
+                    <option value="Nagpur">Nagpur</option>
+                    <option value="Nashik">Nashik</option>
+                    <option value="Aurangabad">Aurangabad</option>
+                    <option value="Kolhapur">Kolhapur</option>
+                    <option value="Solapur">Solapur</option>
+                    <option value="Amravati">Amravati</option>
+
+                    <!-- Madhya Pradesh -->
+                    <option value="Bhopal">Bhopal</option>
+                    <option value="Ujjain">Ujjain</option>
+                    <option value="Gwalior">Gwalior</option>
+                    <option value="Jabalpur">Jabalpur</option>
+                    <option value="Sagar">Sagar</option>
+                    <option value="Ratlam">Ratlam</option>
+                    <option value="Dewas">Dewas</option>
+
+                    <!-- Rajasthan -->
+                    <option value="Jodhpur">Jodhpur</option>
+                    <option value="Udaipur">Udaipur</option>
+                    <option value="Kota">Kota</option>
+                    <option value="Ajmer">Ajmer</option>
+                    <option value="Bikaner">Bikaner</option>
+                    <option value="Alwar">Alwar</option>
+                    <option value="Bharatpur">Bharatpur</option>
+
+                    <!-- Gujarat -->
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Surat">Surat</option>
+                    <option value="Vadodara">Vadodara</option>
+                    <option value="Rajkot">Rajkot</option>
+                    <option value="Gandhinagar">Gandhinagar</option>
+                    <option value="Bhavnagar">Bhavnagar</option>
+                    <option value="Jamnagar">Jamnagar</option>
+                    <option value="Anand">Anand</option>
+
+                    <!-- Delhi & Haryana -->
+                    <option value="Delhi">Delhi</option>
+                    <option value="Gurugram">Gurugram</option>
+                    <option value="Faridabad">Faridabad</option>
+                    <option value="Panipat">Panipat</option>
+                    <option value="Ambala">Ambala</option>
+                    <option value="Hisar">Hisar</option>
+                    <option value="Rohtak">Rohtak</option>
+
+                    <!-- Uttar Pradesh -->
+                    <option value="Lucknow">Lucknow</option>
+                    <option value="Kanpur">Kanpur</option>
+                    <option value="Agra">Agra</option>
+                    <option value="Varanasi">Varanasi</option>
+                    <option value="Prayagraj">Prayagraj</option>
+                    <option value="Noida">Noida</option>
+                    <option value="Ghaziabad">Ghaziabad</option>
+                    <option value="Meerut">Meerut</option>
+                    <option value="Mathura">Mathura</option>
+                    <option value="Ayodhya">Ayodhya</option>
+                    <option value="Bareilly">Bareilly</option>
+                    <option value="Gorakhpur">Gorakhpur</option>
+
+                    <!-- Punjab -->
+                    <option value="Amritsar">Amritsar</option>
+                    <option value="Ludhiana">Ludhiana</option>
+                    <option value="Jalandhar">Jalandhar</option>
+                    <option value="Patiala">Patiala</option>
+                    <option value="Bathinda">Bathinda</option>
+
+                    <!-- West Bengal -->
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Howrah">Howrah</option>
+                    <option value="Durgapur">Durgapur</option>
+                    <option value="Siliguri">Siliguri</option>
+                    <option value="Asansol">Asansol</option>
+
+                    <!-- Bihar -->
+                    <option value="Patna">Patna</option>
+                    <option value="Gaya">Gaya</option>
+                    <option value="Muzaffarpur">Muzaffarpur</option>
+                    <option value="Bhagalpur">Bhagalpur</option>
+                    <option value="Darbhanga">Darbhanga</option>
+
+                    <!-- Jharkhand -->
+                    <option value="Ranchi">Ranchi</option>
+                    <option value="Jamshedpur">Jamshedpur</option>
+                    <option value="Dhanbad">Dhanbad</option>
+                    <option value="Bokaro">Bokaro</option>
+
+                    <!-- Chhattisgarh -->
+                    <option value="Raipur">Raipur</option>
+                    <option value="Bhilai">Bhilai</option>
+                    <option value="Bilaspur">Bilaspur</option>
+                    <option value="Korba">Korba</option>
+
+                    <!-- Odisha -->
+                    <option value="Bhubaneswar">Bhubaneswar</option>
+                    <option value="Cuttack">Cuttack</option>
+                    <option value="Rourkela">Rourkela</option>
+                    <option value="Puri">Puri</option>
+                    <option value="Sambalpur">Sambalpur</option>
+
+                    <!-- Assam & Northeast -->
+                    <option value="Guwahati">Guwahati</option>
+                    <option value="Dibrugarh">Dibrugarh</option>
+                    <option value="Silchar">Silchar</option>
+                    <option value="Shillong">Shillong</option>
+                    <option value="Imphal">Imphal</option>
+                    <option value="Agartala">Agartala</option>
+                    <option value="Aizawl">Aizawl</option>
+                    <option value="Kohima">Kohima</option>
+                    <option value="Itanagar">Itanagar</option>
+
+                    <!-- Karnataka -->
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Mysuru">Mysuru</option>
+                    <option value="Mangaluru">Mangaluru</option>
+                    <option value="Hubballi">Hubballi</option>
+                    <option value="Belagavi">Belagavi</option>
+                    <option value="Davangere">Davangere</option>
+
+                    <!-- Tamil Nadu -->
+                    <option value="Chennai">Chennai</option>
+                    <option value="Coimbatore">Coimbatore</option>
+                    <option value="Madurai">Madurai</option>
+                    <option value="Tiruchirappalli">Tiruchirappalli</option>
+                    <option value="Salem">Salem</option>
+                    <option value="Tirunelveli">Tirunelveli</option>
+                    <option value="Erode">Erode</option>
+                    <option value="Vellore">Vellore</option>
+
+                    <!-- Telangana -->
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Warangal">Warangal</option>
+                    <option value="Nizamabad">Nizamabad</option>
+                    <option value="Karimnagar">Karimnagar</option>
+
+                    <!-- Andhra Pradesh -->
+                    <option value="Visakhapatnam">Visakhapatnam</option>
+                    <option value="Vijayawada">Vijayawada</option>
+                    <option value="Guntur">Guntur</option>
+                    <option value="Tirupati">Tirupati</option>
+                    <option value="Nellore">Nellore</option>
+                    <option value="Kurnool">Kurnool</option>
+
+                    <!-- Kerala -->
+                    <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+                    <option value="Kochi">Kochi</option>
+                    <option value="Kozhikode">Kozhikode</option>
+                    <option value="Thrissur">Thrissur</option>
+                    <option value="Kollam">Kollam</option>
+                    <option value="Kannur">Kannur</option>
+
+                    <!-- Goa -->
+                    <option value="Panaji">Panaji</option>
+                    <option value="Margao">Margao</option>
+                    <option value="Vasco da Gama">Vasco da Gama</option>
+
+                    <!-- Uttarakhand -->
+                    <option value="Dehradun">Dehradun</option>
+                    <option value="Haridwar">Haridwar</option>
+                    <option value="Rishikesh">Rishikesh</option>
+                    <option value="Nainital">Nainital</option>
+                    <option value="Haldwani">Haldwani</option>
+
+                    <!-- Himachal Pradesh -->
+                    <option value="Shimla">Shimla</option>
+                    <option value="Manali">Manali</option>
+                    <option value="Dharamshala">Dharamshala</option>
+                    <option value="Solan">Solan</option>
+
+                    <!-- Jammu & Kashmir -->
+                    <option value="Srinagar">Srinagar</option>
+                    <option value="Jammu">Jammu</option>
+                    <option value="Anantnag">Anantnag</option>
+
+                    <!-- Andhra / Other Major Cities -->
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Puducherry">Puducherry</option>
+
+                </select>
+
+            </section>
+
+
+        
+
+
+    <!-- ================= FEATURED DONATIONS ================= -->
+
+    <section class="featured-donations" id="featured" data-aos="fade-up">
+
+        <div class="section-title">
+
+            <h2>Featured Donations</h2>
+
+            <p>
+                Explore recently donated items that are ready to find a new home.
+            </p>
+
+        </div>
+
+        <div class="featured-grid">
+
+            <!-- Card 1 -->
+
+            <div class="donation-card"
+                    data-name="Winter Jacket"
+                    data-category="Clothes"
+                    data-location="Pune"
+                    data-description="Warm winter jacket in excellent condition. Clean, comfortable, and perfect for cold weather."
+                    data-condition="Excellent Condition"
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
+                    data-donor="Amit Patel"
+                    data-posted="2 Days Ago">
+
+                <div class="item-image">
+
+                    <img src="https://png.pngtree.com/thumb_back/fh260/background/20230611/pngtree-the-design-for-a-new-winter-coat-or-winter-jacket-image_2878815.jpg"
+                        alt="Clothes">
+
+                    <span class="badge">Clothes</span>
+
+                </div>
+
+                <div class="item-content">
+
+                    <h3>Winter Jacket</h3>
+
+                    <p class="location">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        Pune
+
+                    </p>
+
+                    <p class="condition">
+
+                        Excellent Condition
+
+                    </p>
+
+                    <a href="item-details.html" class="view-btn">
+                                View Details
+                    </a>
+                    
+                    <button class="favorite-btn" onclick="toggleFavorite(this)">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="donation-card"
+                    data-name="School Books"
+                    data-category="Books"
+                    data-location="Delhi"
+                    data-description="A complete set of school books in good condition. Ideal for students preparing for the new academic year."
+                    data-condition="Good Condition"
+                    data-aos="zoom-in"
+                    data-aos-delay="200"
+                    data-donor="Priya Verma"
+                    data-posted="3 Days Ago">
+                <div class="item-image">
+
+                    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=600"
+                        alt="Books">
+
+                    <span class="badge">Books</span>
+
+                </div>
+
+                <div class="item-content">
+
+                    <h3>School Books</h3>
+
+                    <p class="location">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        Delhi
+
+                    </p>
+
+                    <p class="condition">
+
+                        Good Condition
+
+                    </p>
+
+                    <a href="item-details.html" class="view-btn">
+                            View Details
+                    </a>
+                    <button class="favorite-btn" onclick="toggleFavorite(this)">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="donation-card"
+                    data-name="Wooden Chair"
+                    data-category="Furniture"
+                    data-location="Jaipur"
+                    data-description="Strong wooden chair with a sturdy frame. Well maintained and suitable for home or office use."
+                    data-condition="Very Good"
+                    data-aos="zoom-in"
+                    data-aos-delay="300"
+                    data-donor="Rahul Sharma"
+                    data-posted="1 Day Ago">
+
+                <div class="item-image">
+
+                    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600"
+                        alt="Furniture">
+
+                    <span class="badge">Furniture</span>
+
+                </div>
+
+                <div class="item-content">
+
+                    <h3>Wooden Chair</h3>
+
+                    <p class="location">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        Jaipur
+
+                    </p>
+
+                    <p class="condition">
+
+                        Very Good
+
+                    </p>
+
+                    <a href="item-details.html" class="view-btn">
+                        View Details
+                    </a>
+                    <button class="favorite-btn" onclick="toggleFavorite(this)">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Card 4 -->
+
+           <div class="donation-card"
+                    data-name="Kitchen Set"
+                    data-category="Kitchen"
+                    data-location="Mumbai"
+                    data-description="Complete kitchen utensil set including essential cookware. Clean and ready for everyday use."
+                    data-condition="Like New"
+                    data-aos="zoom-in"
+                    data-aos-delay="400"
+                    data-donor="Neha Singh"
+                    data-posted="4 Days Ago">
+
+                <div class="item-image">
+
+                    <img src="https://media.istockphoto.com/id/476392316/photo/kitchen-utensil.jpg?s=612x612&w=0&k=20&c=Mb2d_7WGJP6N5Jb__soAl74ZUhFwH47iSdJtXeoW47o="
+                        alt="Kitchen">
+
+                    <span class="badge">Kitchen</span>
+
+                </div>
+
+                <div class="item-content">
+
+                    <h3>Kitchen Set</h3>
+
+                    <p class="location">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        Mumbai
+
+                    </p>
+
+                    <p class="condition">
+
+                        Like New
+
+                    </p>
+
+                    <a href="item-details.html" class="view-btn">
+                        View Details
+                    </a>
+                    <button class="favorite-btn" onclick="toggleFavorite(this)">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Card 5 -->
+
+            <div class="donation-card"
+                        data-name="Old Laptop"
+                        data-category="Electronics"
+                        data-location="Indore"
+                        data-description="Fully functional laptop suitable for online classes, office work, and everyday browsing."
+                        data-condition="Working Condition"
+                        data-aos="zoom-in"
+                        data-aos-delay="500"
+                        data-donor="Rohit Patel"
+                        data-posted="5 Days Ago">
+
+                <div class="item-image">
+
+                    <img src="https://img.magnific.com/free-photo/laptop-with-sun-background_1232-429.jpg?semt=ais_hybrid&w=740&q=80"
+                        alt="Laptop">
+
+                    <span class="badge">Electronics</span>
+
+                </div>
+
+                <div class="item-content">
+
+                    <h3>Old Laptop</h3>
+
+                    <p class="location">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        Indore
+
+                    </p>
+
+                    <p class="condition">
+
+                        Working
+
+                    </p>
+
+                    <a href="item-details.html" class="view-btn">
+                        View Details
+                    </a>
+                    <button class="favorite-btn" onclick="toggleFavorite(this)">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+            <!-- Card 6 -->
+
+            <div class="donation-card"
+                    data-name="Teddy Bear"
+                    data-category="Toys"
+                    data-location="Bhopal"
+                    data-description="Soft and adorable teddy bear in excellent condition. Perfect for children and gifting."
+                    data-condition="Excellent Condition"
+                    data-aos="zoom-in"
+                    data-aos-delay="600"
+                    data-donor="Anjali Verma"
+                    data-posted="1 Day Ago">
+
+                <div class="item-image">
+
+                    <img src="https://m.media-amazon.com/images/I/61ioc+tMPFL._AC_UF1000,1000_QL80_.jpg"
+                        alt="Toy">
+
+                    <span class="badge">Toys</span>
+
+                </div>
+
+                <div class="item-content">
+
+                    <h3>Teddy Bear</h3>
+
+                    <p class="location">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        Bhopal
+
+                    </p>
+
+                    <p class="condition">
+
+                        Excellent
+
+                    </p>
+
+                    <a href="item-details.html" class="view-btn">
+                        View Details
+                    </a>
+
+                    <button class="favorite-btn" onclick="toggleFavorite(this)">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Card 7 -->
+
+                <div class="donation-card"
+                        data-name="School Uniform"
+                        data-category="Clothes"
+                        data-location="Bhopal"
+                        data-description="Clean and well-maintained school uniform in good condition. Suitable for students who need affordable school clothing."
+                        data-condition="Good Condition"
+                        data-aos="zoom-in"
+                        data-aos-delay="700"
+                        data-donor="Sneha Sharma"
+                        data-posted="2 Days Ago">
+
+                    <div class="item-image">
+
+                        <img src="images/school-uniform.jpg"
+                            alt="School Uniform">
+
+                        <span class="badge">Clothes</span>
+
+                    </div>
+
+                    <div class="item-content">
+
+                        <h3>School Uniform</h3>
+
+                        <p class="location">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                           Amritsar
+
+                        </p>
+
+                        <p class="condition">
+
+                            Good Condition
+
+                        </p>
+
+                        <a href="item-details.html" class="view-btn">
+                            View Details
+                        </a>
+
+                        <button class="favorite-btn" onclick="toggleFavorite(this)">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 8 -->
+
+                <div class="donation-card"
+                        data-name="Study Table"
+                        data-category="Furniture"
+                        data-location="Indore"
+                        data-description="Simple wooden study table in good condition. Perfect for students and home study spaces."
+                        data-condition="Good Condition"
+                        data-aos="zoom-in"
+                        data-aos-delay="800"
+                        data-donor="Vikram Singh"
+                        data-posted="3 Days Ago">
+
+                    <div class="item-image">
+
+                        <img src="images/study-table.jpg"
+                            alt="Study Table">
+
+                        <span class="badge">Furniture</span>
+
+                    </div>
+
+                    <div class="item-content">
+
+                        <h3>Study Table</h3>
+
+                        <p class="location">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            Hyderabad
+
+                        </p>
+
+                        <p class="condition">
+
+                            Good Condition
+
+                        </p>
+
+                        <a href="item-details.html" class="view-btn">
+                            View Details
+                        </a>
+
+                        <button class="favorite-btn" onclick="toggleFavorite(this)">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 9 -->
+
+                <div class="donation-card"
+                        data-name="Sports Shoes"
+                        data-category="Footwear"
+                        data-location="Delhi"
+                        data-description="Comfortable sports shoes in good condition. Suitable for running, walking, and everyday activities."
+                        data-condition="Very Good"
+                        data-aos="zoom-in"
+                        data-aos-delay="900"
+                        data-donor="Karan Mehta"
+                        data-posted="4 Days Ago">
+
+                    <div class="item-image">
+
+                        <img src="images/sports-shoes.jpg"
+                            alt="Sports Shoes">
+
+                        <span class="badge">Footwear</span>
+
+                    </div>
+
+                    <div class="item-content">
+
+                        <h3>Sports Shoes</h3>
+
+                        <p class="location">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            Kolkata
+
+                        </p>
+
+                        <p class="condition">
+
+                            Very Good
+
+                        </p>
+
+                        <a href="item-details.html" class="view-btn">
+                            View Details
+                        </a>
+
+                        <button class="favorite-btn" onclick="toggleFavorite(this)">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+        </div>
+
+        <p id="noResults" class="no-results">
+         😔 No items found. Try another keyword.
+         </p>
+
+    </section>
+
+    <!--==========================
+            HOW IT WORKS
+    ===========================-->
+
+    <section class="how-it-works" id="how-it-works" data-aos="fade-right">
+
+        <div class="section-title">
+
+            <h2>How It Works</h2>
+
+            <p>
+                Donating and requesting items is quick, simple, and completely free.
+            </p>
+
+        </div>
+
+        <div class="work-grid">
+
+            <!-- Step 1 -->
+
+            <div class="step-card" data-aos="fade-right" data-aos-delay="100">
+
+                <div class="number">
+
+                    1
+
+                </div>
+
+                <i class="fa-solid fa-box-open"></i>
+
+                <h3>Donate Items</h3>
+
+                <p>
+
+                    Upload clothes or household items that you no longer use.
+
+                </p>
+
+            </div>
+
+            <!-- Step 2 -->
+
+            <div class="step-card" data-aos="fade-right" data-aos-delay="200">
+
+                <div class="number">
+
+                    2
+
+                </div>
+
+                <i class="fa-solid fa-clipboard-check"></i>
+
+                <h3>Verification</h3>
+
+                <p>
+
+                    Our team reviews the donation details before publishing.
+
+                </p>
+
+            </div>
+
+            <!-- Step 3 -->
+
+            <div class="step-card" data-aos="fade-right" data-aos-delay="300">
+
+                <div class="number">
+
+                    3
+
+                </div>
+
+                <i class="fa-solid fa-handshake-angle"></i>
+
+                <h3>Give Happiness</h3>
+
+                <p>
+
+                    A needy person requests the item and receives it.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--==========================
+            STATISTICS
+    ===========================-->
+
+    <section class="stats" data-aos="fade-up">
+
+        <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+
+            <h2 class="counter" data-target="5000">0</h2>
+
+            <p>Items Donated</p>
+
+        </div>
+
+        <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+
+            <h2 class="counter" data-target="2000">0</h2>
+
+
+            <p>Families Helped</p>
+
+        </div>
+
+        <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+
+            <h2 class="counter" data-target="150">0</h2>
+
+            <p>NGO Partners</p>
+
+        </div>
+
+        <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
+
+            <h2 class="counter" data-target="20000">0</h2>
+
+            <p>Happy Users</p>
+
+        </div>
+
+    </section>
+
+    <!--==========================
+        NGO PARTNERS
+    ===========================-->
+
+<section class="partners" data-aos="fade-up">
+
+    <div class="section-title" data-aos="fade-up">
+        <h2>Our NGO Partners</h2>
+        <p>Together we create a positive impact in communities.</p>
+    </div>
+
+    <div class="partner-grid">
+
+        <div class="partner-card" data-aos="flip-left" data-aos-delay="100">
+            Helping Hands
+        </div>
+
+        <div class="partner-card" data-aos="flip-left" data-aos-delay="200">
+            Care India
+        </div>
+
+        <div class="partner-card" data-aos="flip-left" data-aos-delay="300">
+            Hope Foundation
+        </div>
+
+        <div class="partner-card" data-aos="flip-left" data-aos-delay="400">
+            Smile Trust
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- ================= SUCCESS STORIES ================= -->
+
+    <section class="success-stories" data-aos="fade-up">
+
+        <div class="section-title">
+
+            <h2>Success Stories</h2>
+
+            <p>
+                Every donation creates a new beginning. Here are a few inspiring stories.
+            </p>
+
+        </div>
+
+        <div class="success-grid">
+
+           <div class="story-card" data-aos="flip-left" data-aos-delay="100">
+
+                <img src="images/student.jpg" alt="Student">
+
+                <div class="story-content">
+
+                    <h3>Helping Students</h3>
+
+                    <p>
+                        School uniforms and books were donated to children, helping them continue their education with confidence.
+                    </p>
+
+                </div>
+
+            </div>
+
+           <div class="story-card" data-aos="flip-left" data-aos-delay="200">
+
+                <img src="images/family.jpg" alt="Family">
+
+                <div class="story-content">
+
+                    <h3>Supporting Families</h3>
+
+                    <p>
+                        A family received essential household items that made settling into their new home much easier.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="story-card" data-aos="flip-left" data-aos-delay="300">
+
+                <img src="images/elderly.jpg" alt="Elderly">
+
+                <div class="story-content">
+
+                    <h3>Caring for Elders</h3>
+
+                    <p>
+                        Warm clothes donated by the community reached senior citizens before winter arrived.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+
+    <section class="testimonials" data-aos="fade-up">
+
+        <div class="section-title">
+
+            <h2>What People Say</h2>
+
+            <p>
+                Hear from donors and recipients who have used our platform.
+            </p>
+
+        </div>
+
+        <div class="testimonial-grid">
+
+           <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="100">
+                <p>
+                    "Donating clothes was simple and quick. I loved how easy the process was."
+                </p>
+
+                <h4>Priya Sharma</h4>
+
+                <span>Donor</span>
+
+            </div>
+
+            <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="200">
+
+                <p>
+                    "I received books for my children. This platform truly made a difference."
+                </p>
+
+                <h4>Rahul Verma</h4>
+
+                <span>Recipient</span>
+
+            </div>
+
+            <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="300">
+
+                <p>
+                    "A clean, trustworthy platform with a meaningful purpose."
+                </p>
+
+                <h4>Anjali Singh</h4>
+
+                <span>Volunteer</span>
+
+            </div>
+
+        </div>
+
+    </section>
+     <!-- ================= FAQ ================= -->
+
+    <section class="faq" data-aos="fade-up">
+
+        <div class="section-title">
+
+            <h2>Frequently Asked Questions</h2>
+
+        </div>
+
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+
+            <h3>How can I donate items?</h3>
+
+            <p>Click on the Donate button, fill out the form, and submit your item details.</p>
+
+        </div>
+
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+
+            <h3>Is the platform free?</h3>
+
+            <p>Yes, donating and requesting items is completely free.</p>
+
+        </div>
+
+    </section>
+
+     <!-- ================= NEWSLETTER ================= -->
+
+    <section class="newsletter" data-aos="zoom-in">
+
+    <h2>Stay Updated</h2>
+
+    <p>
+        Subscribe to receive donation updates and community news.
+    </p>
+
+    <form id="newsletterForm"
+          data-aos="zoom-in"
+          data-aos-delay="200">
+
+        <input
+            type="email"
+            id="newsletterEmail"
+            placeholder="Enter your email"
+            required
+        >
+
+        <button type="submit" id="subscribeBtn">
+            Subscribe
+        </button>
+
+    </form>
+
+    <p id="subscribeMessage"></p>
+
+</section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+   <footer class="footer">
+
+    <div class="footer-container">
+
+        <div>
+
+        <h2>ReWear</h2>
+
+        <p>
+        Giving unused items a second life while helping communities.
+        </p>
+
+        </div>
+
+        <div>
+
+        <h3>Quick Links</h3>
+
+        <ul>
+
+        <li><a href="#home">Home</a></li>
+        <li><a href="#featured">Browse</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="how-it-works">About</a></li>
+
+        </ul>
+
+        </div>
+
+        <div id="contact">
+            <h3>Contact</h3>
+            <p>Email: support@rewear.com</p>
+            <p>Phone: +91 9876543210</p>
+        </div>
+
+    </div>
+
+<hr>
+
+<p class="copyright">
+
+    © 2026 ReWear. All Rights Reserved.
+
+</p>
+
+</footer>
+
+ <!-- ================= BACK TO TOP ================= -->
+
+    <button id="backToTop">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <script>
+
+        AOS.init({
+
+        duration:1000,
+
+        once:true,
+
+        });
+
+    </script>
+   
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Donate Item | ReWear</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+    
+
+    <header>
+
+    <!-- ================= BACK BUTTON ================= -->
+
+<header class="details-header donate-header">
+
+    <a href="index.html" class="back-btn">
+
+        <i class="fa-solid fa-arrow-left"></i>
+
+        Back
+
+    </a>
+
+</header>
+    
+
+</header>
+
+<div class="auth-container">
+
+    <div class="auth-box">
+
+        <div class="page-title">
+
+            <h1>Donate an Item</h1>
+
+            <p>
+                Share your unused items with someone who truly needs them.
+            </p>
+
+        </div>
+
+        <form id="donateForm">
+
+            <input
+                type="text"
+                id="itemName"
+                placeholder="Item Name"
+                required>
+
+            <input
+                type="text"
+                id="imageUrl"
+                placeholder="Image URL"
+                required>
+
+
+            <select id="category" required>
+
+                <option value="">Select Category</option>
+
+                <option>Clothes</option>
+                <option>Books</option>
+                <option>Furniture</option>
+                <option>Kitchen</option>
+                <option>Electronics</option>
+                <option>Toys</option>
+
+            </select>
+
+            <input
+                type="text"
+                id="location"
+                placeholder="Location"
+                required>
+
+            <input
+                type="text"
+                id="condition"
+                placeholder="Condition"
+                required>
+
+            <textarea
+                id="description"
+                rows="5"
+                placeholder="Item Description"
+                required></textarea>
+
+            <button type="submit">
+
+                Donate Item
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="js/donate.js"></script>
+
+</body>
+
+</html>
